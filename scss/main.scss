@@ -82,6 +82,7 @@ body {
 		position: absolute;
 		top: 60px;
 		left: 0;
+		z-index: 5;
 		width: 100%;
 		display: flex;
 		align-items: center;
@@ -379,6 +380,7 @@ body {
 	width: 100%;
 	height: 100%;
 	position: absolute;
+	z-index: 6;
 	top: -100%;
 	left: 0;
 	transition: all 0.5s ease;
@@ -443,5 +445,90 @@ body {
 	
 	&.burger {
 		top: 0;
+	}
+}
+
+.full-screen {
+	min-height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&__backgr {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: url('../img/bg.png') 0 100% / auto 100% no-repeat rgba(251, 241, 237) ;
+	}
+	
+	&__front-img {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		width: 42%;
+		&::before {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			z-index: 5;
+			width: 50px;
+			height: 50px;
+			background: #fff;
+		}
+	}
+
+	&__container {
+		display: flex;
+	}
+
+	&__vector {
+		margin: 27px 12px 0 0;
+		align-self: flex-start;
+	}
+
+	&__content {
+		max-width: 55%;
+	}
+
+	&__title {
+		font-weight: 300;
+		font-size: 55px;
+		line-height: 67px;
+		color: #000000;
+		& span {font-weight: 700;}
+	}
+
+	&__info {
+		font-size: 18px;
+		line-height: 22px;
+		color: rgba(0, 0, 0, 0.5);
+		margin-top: 30px;
+	}
+
+	&__btn-about {
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 20px;
+		background: #E74E13;
+		border: 4px solid #E74E13;
+		color: #fff;
+		border-radius: 90px;
+		height: 45px;
+		margin-top: 23px;
+		padding-left: 40px;
+		padding-right: 40px;
+		transition: all 0.2s ease;
+		&:hover, &:active, &:focus, &.active {
+			background: none;
+			color: #84c551;
+			border: 4px solid #84c551;
+		}
 	}
 }
