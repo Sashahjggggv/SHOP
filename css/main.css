@@ -364,8 +364,10 @@ body {
   color: rgba(255, 255, 255, 0.9);
   font-weight: 300;
 }
-.search__input:hover, .search__input:active, .search__input:focus, .search__input.active .search {
-  width: 155px;
+@media (min-width: 768px) {
+  .search__input:hover, .search__input:active, .search__input:focus, .search__input.active .search {
+    width: 155px;
+  }
 }
 .search__btn {
   position: absolute;
