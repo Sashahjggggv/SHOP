@@ -3,6 +3,9 @@
 
 body {
 	font-family: 'Montserrat', sans-serif;
+	background: #1E6140;
+}
+.wrapper {
 	background: #E5E5E5;
 }
 .container {
@@ -196,7 +199,7 @@ body {
 				transform: scale(0.9);
 			}
 		}
-		&__bottom-btns {
+		/* &__bottom-btns {
 			top: 55px;
 		}
 		&__bottom-btn {
@@ -222,7 +225,7 @@ body {
 					color: #fff;
 				}
 			}
-		}
+		} */
 		&__bottom-btns {display: none;}
 	}
 }
