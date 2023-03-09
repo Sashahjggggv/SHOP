@@ -4,9 +4,10 @@ $('.header__phone-btn').click(function(){
 $('.header__burger-btn').click(function(){
   $('.header,.menu-burger').toggleClass('burger');
 })
-const searchInput = document.querySelector('.search__input');
+
+const searchInput = document.querySelector('.search__input_header-line');
 if (searchInput === document.activeElement) {
-  $('.search').addClass('border')
+  $('.search__header-line').addClass('border')
 } else {
-  $('.search').removeClass('border')
+  $('.search__header-line').removeClass('border')
 }

@@ -82,7 +82,7 @@ body {
   background: #1E6140;
 }
 
-.wrapper {
+.wrapper > * {
   background: #E5E5E5;
 }
 
@@ -339,8 +339,14 @@ body {
   height: 22px;
   background: #84BE51;
 }
-.search__header-line:hover, .search__header-line:active, .search__header-line:focus, .search__header-line.active {
+.search__header-line {
   width: 155px;
+}
+.search__header-line.active {
+  border: 1px solid #84c551;
+}
+.search__header-line:hover, .search__header-line:active, .search__header-line:focus, .search__header-line.border {
+  border: 4px solid #84c551;
 }
 .search__container {
   position: absolute;
