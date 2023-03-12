@@ -408,6 +408,10 @@ body {
 .phone-btn:hover .phone-btn__container, .phone-btn:active .phone-btn__container, .phone-btn:focus .phone-btn__container, .phone-btn.active .phone-btn__container {
   animation: phone 0.2s ease 1 forwards;
 }
+.phone-btn_burger {
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+}
 @keyframes phone {
   0% {
     transform: translateX(0);
@@ -484,7 +488,7 @@ body {
 }
 .menu-burger__flex-line {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   margin-bottom: 10px;
 }
 .menu-burger__flex-line:last-child {

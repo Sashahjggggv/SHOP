@@ -327,6 +327,9 @@ body {
 			animation: phone 0.2s ease 1 forwards;
 		}
 	}
+	&_burger {
+		width: fit-content !important;
+	}
 	@keyframes phone {
 		0% {
 			transform: translateX(0);
@@ -398,7 +401,7 @@ body {
 	}
 	&__flex-line {
 		display: flex;
-		justify-content: end;
+		justify-content: space-between;
 		margin-bottom: 10px;
 		&:last-child {margin: 0;}
 		& > * {
